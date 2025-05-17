@@ -1,4 +1,5 @@
 import Form from "next/form";
+import SearchFormReset from "./SearchFormReset";
 
 const SearchForm = () => {
     const query = 'Test';
@@ -12,11 +13,7 @@ const SearchForm = () => {
             placeholder="Search Startups"/>
 
         <div className="flex gap-2">
-            {query && (
-                <button>
-                    
-                </button>
-            )}
+            {query && <SearchFormReset/>}
         </div>
     </Form>
   )
